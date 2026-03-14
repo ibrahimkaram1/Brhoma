@@ -129,8 +129,8 @@ Web application demonstrating dynamic front-end capabilities and elegant UI.
 
 ## 🔗 Connect With Me
 
-- GitHub: https://github.com/yourusername
-- Portfolio: https://hime-profile.netlify.app/
+- GitHub: [https://github.com/yourusername](https://github.com/ibrahimkaram1)
+- Portfolio: [https://hime-profile.netlify.app/](https://hime-profile.netlify.app/#)
 
 ---
 
