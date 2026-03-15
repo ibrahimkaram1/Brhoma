@@ -688,6 +688,107 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 }
 
 /* ========================================
+   PORTFOLIO
+   ======================================== */
+.portfolio {
+  padding: var(--section-padding);
+  background: var(--bg-primary);
+  position: relative;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.portfolio-card {
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  transition: var(--transition-mid);
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px);
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-md);
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 220px;
+  background: var(--bg-glass);
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.portfolio-card:hover .portfolio-img img {
+  transform: scale(1.05);
+}
+
+.portfolio-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.portfolio-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.portfolio-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 24px;
+  flex: 1;
+}
+
+.portfolio-links {
+  display: flex;
+  gap: 16px;
+  margin-top: auto;
+}
+
+.portfolio-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+  transition: var(--transition-fast);
+}
+
+.portfolio-link:hover {
+  color: var(--accent-indigo);
+}
+
+.portfolio-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ========================================
    CONTACT
    ======================================== */
 .contact {
@@ -947,6 +1048,9 @@ a.contact-item-value:hover {
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -1001,6 +1105,10 @@ a.contact-item-value:hover {
   }
 
   .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-grid {
     grid-template-columns: 1fr;
   }
 
