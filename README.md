@@ -57,13 +57,13 @@ hime-profile
 ├── script.js
 │
 ├── images
-│   ├── profile
-│   └── projects
+│   ├── profile/
+│   └── projects/
+│       ├── karamala.png
+│       ├── waslny.png
+│       └── dalkely.png
 │
-├── screenshots
-│   ├── home.png
-│   ├── skills.png
-│   └── projects.png
+├── screenshots/
 │
 └── README.md
 ```
